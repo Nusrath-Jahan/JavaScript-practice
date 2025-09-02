@@ -18,3 +18,13 @@ const mixedNumbers = [1, -2, 3, -4, 5];
 const positiveNumbers = mixedNumbers.filter((num) => num > 0);
 console.log(positiveNumbers);
 // Output: [1, 3, 5]
+
+// Reduce function
+const sum = numbers.reduce((accumulator, current) => accumulator + current, 0);
+console.log(sum);
+// Output: 15
+
+//[.reduce() method is used on arrays to reduce all the elements to a single value by applying a function you provide.
+//.reduce() হলো একটা Array method, যা পুরো array-এর উপাদানগুলোকে (elements) একসাথে মিলিয়ে একটা একক (single) value তৈরি করে।]
+// উদাহরণ: 5টা সংখ্যার array আছে, [1, 2, 3, 4, 5]. এই array-এর সবগুলো সংখ্যার যোগফল বের করতে চাইলে আমরা .reduce() method ব্যবহার করতে পারি।
+
