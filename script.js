@@ -28,3 +28,14 @@ console.log(sum);
 //.reduce() হলো একটা Array method, যা পুরো array-এর উপাদানগুলোকে (elements) একসাথে মিলিয়ে একটা একক (single) value তৈরি করে।]
 // উদাহরণ: 5টা সংখ্যার array আছে, [1, 2, 3, 4, 5]. এই array-এর সবগুলো সংখ্যার যোগফল বের করতে চাইলে আমরা .reduce() method ব্যবহার করতে পারি।
 
+
+//Real example for fetch API
+
+fetch("https://jsonplaceholder.typicode.com/posts")
+.then((response) => response.json()) 
+//.then((data) => console.log(data))
+.then((data) => {
+    const dataTitles = data.map((post) => post.id);
+    console.log(dataTitles);
+})
+.catch((error) => console.error("Error fetching data:", error));
