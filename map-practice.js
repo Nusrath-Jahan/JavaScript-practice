@@ -1,4 +1,4 @@
-console.log("Hello World");
+console.log("forEach/map/filter/reduce functions practice");
 
 //forEach function
 const fruits = ["apple", "banana", "cherry"];
