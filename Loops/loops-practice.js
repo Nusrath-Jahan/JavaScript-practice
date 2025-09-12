@@ -1,4 +1,17 @@
-//For loop practice
+//For
+//for of
+//for in
+//do-while
+//while
+
+//...........................................................
+//For loop
+
+//print numbers from 1 to 10
+for (let i = 1; i <= 10; i++) {
+  console.log(i);
+}
+
 let fruits = ["apple", "banana", "mango", "orange", "grape"];
 for (let i = 1; i <= fruits.length; i++) {
   console.log(i + ". " + fruits[i - 1]);
@@ -27,7 +40,15 @@ for (let i = 1; i <= 10; i++) {
 }
 
 //...........................................................
-//for in loop practice
+//for of loop
+let color = ["red", "green", "blue", "yellow"];
+for (let col of color) {
+  console.log(col);
+}
+
+//...........................................................
+//for in loop
+
 let person = {
   name: "John",
   age: 30,
@@ -35,4 +56,44 @@ let person = {
 };
 for (let key in person) {
   console.log(key + ": " + person[key]);
+}
+//...........................................................
+//do-while loop
+
+let count = 1;
+do {
+  console.log("Count is: : " + count);
+  count++;
+} while (count <= 5);
+
+//password checker
+
+let password = 123456;
+let userInput;
+do {
+  userInput = prompt("Enter your password:");
+} while (userInput != password);
+console.log("Access granted!");
+
+// do {
+//   userInput = prompt("Enter your password:");
+//   if (userInput === null) {
+//     alert("Cancelled");
+//     break;
+//   }
+//   if (userInput != password){
+//     alert("Wrong password")
+//   }
+// } while (userInput != password);
+// if (userInput === password) {
+//   console.log("Access granted!");
+// }
+
+
+//...........................................................
+//while loop
+let num = 1;
+while (num <= 5) {
+  console.log("Number is: " + num);
+  num++;
 }
